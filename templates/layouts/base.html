@@ -1,0 +1,60 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="scrollToTop-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+
+    <header>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="#main">home</a>
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#blogs">blogs</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Uz
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="brand">Jasur</a> -->
+        
+        
+    </header>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="footer">
+        <span class="footer-title">Jasur Israilov</span>
+        <p>Copyright @2021. All Rights Reserved.</p>
+    </footer>
+
+    <script src="{% static 'main/js/main.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
+</body>
+
+</html>

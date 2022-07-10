@@ -1,0 +1,178 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+
+<section class="main" id="main">
+    <div class="content">
+        <h2>Hello, I'm<br> <span>Jasur Israilov</span> </h2>
+        <div class="animated-text">
+            <h3>Full Stack</h3>
+            <h3>Web Developer</h3>
+            <h3>Backend</h3>
+        </div>
+        <!-- <a href="#" class="btn btn-danger">See My Work</a> -->
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+
+</section>
+
+
+<section class="about" id="about">
+    <div class="title reveal">
+        <div class="section-title">About Me</div>
+    </div>
+    <div class="content">
+        <div class="column col-left reveal">
+            <div class="img-card">
+                <img src="./images/img1.png" alt="">
+            </div>
+        </div>
+        <div class="column col-right reveal">
+            <h2 class="content-title">Hey there! I'm Jasur Israilov</h2>
+            <p class="paragraph-text"></p>
+            <a href="#" class="btn btn-danger">See More</a>
+        </div>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <div class="title reveal">
+        <div class="section-title">My Skills</div>
+    </div>
+    <div class="content">
+        <div class="column col-left reveal">
+            <h2 class="content-title">My Skills and Experiences</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="column col-right reveal">
+            <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                    <span>95%</span>
+                </div>
+                <div class="line html"></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                    <span>85%</span>
+                </div>
+                <div class="line css"></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>JavaScript</span>
+                    <span>5%</span>
+                </div>
+                <div class="line javascript"></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>Python</span>
+                    <span>65%</span>
+                </div>
+                <div class="line python"></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>Backend</span>
+                    <span>70%</span>
+                </div>
+                <div class="line backend"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blogs" id="blogs">
+    <div class="title reveal">
+        <div class="section-title">My Blogs</div>
+    </div>
+    <!-- blogs -->
+
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+    <div class="title reveal">
+        <div class="section-title">Contact Me</div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="card reveal">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info">
+                    <h3>Address</h3>
+                    <span>Sergeli Aviagoro 83/7</span>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <span>+998 97 172-20-05</span>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <!-- <a href="https://mail.google.com/mail/u/0/#inbox?compose=PNRMKcTVfHsFZGkvXDSRnpqmSLkFGccgPmqgqtNdwTBPQzwwwdnFbTfzHhcSkJLGHMprsqCVgJhfRCL"> -->
+                <div class="info">
+                    <h3>Email Address</h3>
+                    <span>jasurisrailov1@gmail.com</span>
+                </div>
+                <!-- </a> -->
+            </div>
+            <div class="card reveal">
+                <div class="contact-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="info">
+                    <h3>Website</h3>
+                    <span>israilov.uz</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact-form reveal">
+                <h3>Send Message</h3>
+                <div class="input-box">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <textarea rows="8" cols="80" placeholder="Message"></textarea>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="send-btn" value="Send">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -2,6 +2,7 @@ from django.db import models
 
 class MessageModel(models.Model):
     name = models.CharField(max_length=100)
+    phone = models.CharField(max_length=13)
     email = models.EmailField()
     message = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)

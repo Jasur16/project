@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-12 18:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: templates/layouts/base.html:23
+msgid "Главная"
+msgstr "Asosiy"
+
+#: templates/layouts/base.html:24 templates/main/index.html:28
+msgid "Обо мне"
+msgstr "Man haqimda"
+
+#: templates/layouts/base.html:25
+msgid "Навыки и умения"
+msgstr "Bilimlarim"
+
+#: templates/layouts/base.html:27
+msgid "Контакты"
+msgstr "Kontakt"
+
+#: templates/main/index.html:8
+msgid "Привет, я"
+msgstr "Salom, man"
+
+#: templates/main/index.html:38
+msgid "Привет! Я Жасур Исраилов"
+msgstr "Salom! Man Jasur Israilov"
+
+#: templates/main/index.html:50
+msgid "Мои навыки"
+msgstr "Bilimlarim"
+
+#: templates/main/index.html:54
+msgid "Мои навыки и опыт"
+msgstr "Bilimlarim"
+
+#: templates/main/index.html:55
+msgid ""
+"Чему я научился за 6 месяцев, так это «Python, HTML, CSS, Frontend, Backend."
+msgstr "6 oy ichida man 'Python, HTML, CSS, Frontend, Backend' ni o'rgandim"
+
+#: templates/main/index.html:117
+msgid "Свяжитесь со мной"
+msgstr "Man bilan bog'lanish"
+
+#: templates/main/index.html:126
+msgid "Адрес"
+msgstr "Manzil"
+
+#: templates/main/index.html:127
+msgid "Сергели Авиагоро 83/7"
+msgstr "Sergeli Aviagorodok"
+
+#: templates/main/index.html:135 templates/main/index.html:169
+msgid "Телефон"
+msgstr "Raqamim"
+
+#: templates/main/index.html:145
+msgid "Адрес электронной почты"
+msgstr "Elektron manzilim"
+
+#: templates/main/index.html:155
+msgid "Веб-сайт"
+msgstr "Saytimning nomi"
+
+#: templates/main/index.html:163
+msgid "Отправить сообщение"
+msgstr "Habar jo'natish"
+
+#: templates/main/index.html:165
+msgid "Имя"
+msgstr "Isim"
+
+#: templates/main/index.html:173
+msgid "Электронная почта"
+msgstr "Elektron manzilim"
+
+#: templates/main/index.html:177
+msgid "Сообщение"
+msgstr "Habar"
+
+#: templates/main/index.html:180
+msgid "Отправить"
+msgstr "Habar jo'natish"

@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from .models import AboutModel, MessageModel
 from modeltranslation.admin import TranslationAdmin
 
@@ -13,6 +14,7 @@ class MessageModelAdmin(admin.ModelAdmin):
 class AboutModelAdmin(TranslationAdmin):
     list_display = ['id']
     list_display_links = ['id']
+
 
     class Media:
         js = (

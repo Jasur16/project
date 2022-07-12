@@ -5,7 +5,7 @@
 
 <section class="main" id="main">
     <div class="content">
-        <h2>Hello, I'm<br> <span>Jasur Israilov</span> </h2>
+        <h2>{% translate "Привет, я" %}<br> <span>Jasur Israilov</span> </h2>
         <div class="animated-text">
             <h3>Full Stack</h3>
             <h3>Web Developer</h3>
@@ -13,9 +13,9 @@
         </div>
         <!-- <a href="#" class="btn btn-danger">See My Work</a> -->
         <div class="media-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https:/facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/i.jasurr"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
 
@@ -25,9 +25,9 @@
 
 <section class="about" id="about">
     <div class="title reveal">
-        <div class="section-title">About Me</div>
+        <div class="section-title">{% translate "Обо мне" %}</div>
     </div>
-    {% for about in abouts %}
+    {% for about in object_list %}
     <div class="content">
         <div class="column col-left reveal">
             <div class="img-card">
@@ -35,21 +35,24 @@
             </div>
         </div>
         <div class="column col-right reveal">
-            <h2 class="content-title">Hey there! I'm Jasur Israilov</h2>
+            <h2 class="content-title">{% translate "Привет! Я Жасур Исраилов" %}</h2>
             <p class="paragraph-text">{{ about.body|safe }}</p>
         </div>
     </div>
     {% endfor %}
+
+  
 </section>
+
 
 <section class="skills" id="skills">
     <div class="title reveal">
-        <div class="section-title">My Skills</div>
+        <div class="section-title">{% translate "Мои навыки" %}</div>
     </div>
     <div class="content">
         <div class="column col-left reveal">
-            <h2 class="content-title">My Skills and Experiences</h2>
-            <p>6 oy ichida o'rganganganlarim "Python, HTML, CSS, Frontend, Backend"</p>
+            <h2 class="content-title">{% translate "Мои навыки и опыт" %}</h2>
+            <p>{% translate "Чему я научился за 6 месяцев, так это «Python, HTML, CSS, Frontend, Backend." %}</p>
         </div>
         <div class="column col-right reveal">
             <div class="bar">
@@ -111,7 +114,7 @@
 
 <section class="contact" id="contact">
     <div class="title reveal">
-        <div class="section-title">Contact Me</div>
+        <div class="section-title">{% translate "Свяжитесь со мной" %}</div>
     </div>
     <div class="content">
         <div class="row">
@@ -120,8 +123,8 @@
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="info">
-                    <h3>Address</h3>
-                    <span>Sergeli Aviagoro 83/7</span>
+                    <h3>{% translate "Адрес" %}</h3>
+                    <span>{% translate "Сергели Авиагоро 83/7" %}</span>
                 </div>
             </div>
             <div class="card reveal">
@@ -129,7 +132,7 @@
                     <i class="fas fa-phone"></i>
                 </div>
                 <div class="info">
-                    <h3>Phone</h3>
+                    <h3>{% translate "Телефон" %}</h3>
                     <span>+998 97 172-20-05</span>
                 </div>
             </div>
@@ -137,19 +140,19 @@
                 <div class="contact-icon">
                     <i class="fas fa-envelope"></i>
                 </div>
-                <!-- <a href="https://mail.google.com/mail/u/0/#inbox?compose=PNRMKcTVfHsFZGkvXDSRnpqmSLkFGccgPmqgqtNdwTBPQzwwwdnFbTfzHhcSkJLGHMprsqCVgJhfRCL"> -->
+                <a style="text-decoration: none" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlGVGNGlWCnZbTbGDpRdrznnvRqKkhjGgshDtTMnVWsRtkgtxSbxSMjLlkPNhTmdfPlwkg">
                 <div class="info">
-                    <h3>Email Address</h3>
+                    <h3>{% translate "Адрес электронной почты" %}</h3>
                     <span>jasurisrailov1@gmail.com</span>
                 </div>
-                <!-- </a> -->
+                </a>
             </div>
             <div class="card reveal">
                 <div class="contact-icon">
                     <i class="fas fa-globe"></i>
                 </div>
                 <div class="info">
-                    <h3>Website</h3>
+                    <h3>{% translate "Веб-сайт" %}</h3>
                     <span>israilov.uz</span>
                 </div>
             </div>
@@ -157,24 +160,24 @@
         <form class="row" method="post" action="{% url 'contact' %}">
             {% csrf_token %}
             <div class="contact-form reveal">
-                <h3>Send Message</h3>
+                <h3>{% translate "Отправить сообщение" %}</h3>
                 <div class="input-box">
-                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="name" placeholder="{% translate 'Имя' %}">
                 </div>
                 <span style="color: red">{{ form.errors.name }}</span>
                 <div class="input-box">
-                    <input type="text" name="phone" placeholder="Phone">
+                    <input type="text" name="phone" placeholder="{% translate 'Телефон' %}">
                 </div>
                 <span style="color: red">{{ form.errors.phone }}</span>
                 <div class="input-box">
-                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="email" placeholder="{% translate 'Электронная почта' %}">
                 </div>
                 <span style="color: red">{{ form.errors.email }}</span>
                 <div class="input-box">
-                    <textarea rows="8" cols="80" name="message" placeholder="Message"></textarea>
+                    <textarea rows="8" cols="80" name="message" placeholder="{% translate 'Сообщение' %}"></textarea>
                 </div>
                 <div class="input-box">
-                    <input type="submit" class="send-btn" value="Send">
+                    <input type="submit" class="send-btn" value="{% translate 'Отправить' %}">
                 </div>
             </div>
         </form>

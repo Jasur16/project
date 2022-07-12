@@ -64,11 +64,10 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(./images/bg.png) no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #000;
 }
 
 .main .content {
@@ -565,9 +564,9 @@ section {
     }
 }
 
-/* @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {}
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {}
 
-@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {} */
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {}
 
 .scrollToTop-btn {
     z-index: 999;
@@ -603,3 +602,4 @@ section {
     transform: translateY(0);
     opacity: 1;
 }
+

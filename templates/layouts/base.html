@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 <html lang="en">
 
 <head>
@@ -20,22 +20,22 @@
     <header>
         <div class="menu-btn"></div>
         <div class="navigation">
-            <a href="#main">home</a>
-            <a href="#about">about</a>
-            <a href="#skills">skills</a>
-            <a href="#blogs">blogs</a>
-            <a href="{% url 'contact' %}">contact</a>
+            <a href="#main">{% translate "Главная" %}</a>
+            <a href="#about">{% translate "Обо мне" %}</a>
+            <a href="#skills">{% translate "Навыки и умения" %}</a>
+            <!-- <a href="#blogs">blogs</a> -->
+            <a href="#contact">{% translate "Контакты" %}</a>
         </div>
 
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            <button class="btn btn-light " type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Uz
+                {{ LANGUAGE_CODE }}
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                {% for lang in LANGUAGES %}
+                <li><a class="dropdown-item {% if LANGUAGE_CODE == lang.0 %}active{% endif %}" href="/{{ lang.0 }}/{{ request.path|slice:'4:' }}">{{ lang.1 }}</a></li>
+                {% endfor %}
             </ul>
         </div>
         <!-- <a href="#" class="brand">Jasur</a> -->

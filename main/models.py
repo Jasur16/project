@@ -1,15 +1,15 @@
-from codecs import charmap_build
 from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.core.validators import MinLengthValidator, MaxLengthValidator, EmailValidator
 from config.validators import PhoneValidator
 
-
 class AboutModel(models.Model):
-    image = models.ImageField(upload_to = 'about/')
+    image = models.ImageField(upload_to='about')
     body = RichTextUploadingField()
 
-
+    class Meta:
+        verbose_name = 'about'
+        verbose_name_plural = 'abouts'
 
 class MessageModel(models.Model):
     name = models.CharField(

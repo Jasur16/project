@@ -1,20 +1,16 @@
 from django.shortcuts import redirect, render, reverse
-from django.views.generic import TemplateView, ListView, CreateView
-from .models import AboutModel, MessageModel
+from django.views.generic import  ListView, CreateView
+from .models import MessageModel, AboutModel
 from .forms import MessageModelForm
 from django.core.mail import send_mail
 from django.conf.global_settings import EMAIL_HOST_USER
 from .utils import send_bot_message
 
 
-class HomeView(TemplateView):
-    template_name = 'main/index.html'
-    
-    
-class AboutView(ListView):
+class HomeView(ListView):
     model = AboutModel
     template_name = 'main/index.html'
-    object_list = 'abouts'
+    
 
 class ContactView(CreateView):
     

@@ -68,6 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',
             ],
         },
     },
@@ -114,15 +115,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'uz'
+LANGUAGE_CODE = 'ru'
 
 LANGUAGES = (
-    ('en', 'English'),
-    ('uz', 'Uzbek'),
-    ('ru', 'Russia'),
+    ('uz', 'UZB🇺🇿'),
+    ('ru', 'RUS🇷🇺'),
 )
 
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 
 LOCALE_PATHS = BASE_DIR / 'locale',
 
@@ -161,7 +161,7 @@ CKEDITOR_CONFIGS = {
         # 'width': 300,
     },
 }
-
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587

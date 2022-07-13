@@ -5,6 +5,9 @@ from .forms import MessageModelForm
 from django.core.mail import send_mail
 from django.conf.global_settings import EMAIL_HOST_USER
 from .utils import send_bot_message
+from django.contrib import messages
+from django.http import HttpResponseRedirect
+
 
 
 class HomeView(ListView):
@@ -29,3 +32,4 @@ class ContactView(CreateView):
         # send_mail("Test", message, EMAIL_HOST_USER, [form.instance.email])
         send_bot_message(form.cleaned_data)
         return super().form_valid(form)
+

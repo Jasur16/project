@@ -271,6 +271,11 @@ section {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
+    text-align: center;
+}
+
+.card .info{
+    text-align: center;
 }
 
 .skills .info span {
@@ -350,6 +355,10 @@ section {
 
 }
 
+form .contact-form{
+    width: 600px;
+}
+
 .contact .card .contact-icon {
     color: crimson;
     font-size: 60px;
@@ -367,6 +376,7 @@ section {
     font-size: 20px;
     font-weight: 700;
     margin: 10px;
+   
 }
 
 .contact .card .info span {
@@ -584,6 +594,9 @@ section {
     cursor: pointer;
     opacity: 0;
     transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scrollToTop-btn.active {
